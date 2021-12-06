@@ -1,0 +1,284 @@
+
+body {background-color: white;}
+  
+  .dark-mode{background-color: rgba(0, 0, 0, 0.4);}
+  .dark-mode .card{background-color: transparent;}
+  .dark-mode h1, h2, h3, h4, h5, h6, p{text-shadow: 5px 2px 5px rgba(245, 222, 179, 0.8)!important;}
+
+
+ /**/
+ @import url(https://fonts.googleapis.com/css?family=Amatic+SC:400,700);
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Amatic SC', cursive;
+}
+.block{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  font-size: 16px;
+}
+.block h2{
+  position: relative;
+  display: block;
+  text-align: center;
+  margin: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 10vw;
+  color: white; 
+}
+.img-parallax {
+  width: 100vmax;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,0);
+  pointer-events: none
+}
+
+:root { --beige: #FFD68F }
+:root { --brown: #943803 }
+:root { --red: #850505 }
+header { background: url('img/headerbg.png') center/cover }
+.header2 { background: url('img/header2.jpg') center/cover }
+.header3 { background: url('img/header3.jpg') center/cover }
+header nav { background-color: rgba(255,255,255,.8) }
+
+.bg-beige { background-color: var(--beige)!important }
+.bg-brown{background-color: var(--brown)!important}
+.bg-red{background-color: var(--red)!important}
+.text-brown { color: var(--brown)}
+.text-beige{ color: var(--beige) }
+.text-red{ color: var(--red)}
+.vh-50 { height: 50vh }
+
+#img1 { background: url('img/img1.jpg') center/cover }
+#img2 { background: url('img/img2.jpg') center/cover }
+#img1:hover, #img2:hover { opacity: .4 }
+#img1, #img2{transition: .2s linear;}
+#img1:hover p, #img2:hover p { visibility: visible!important;}
+
+#services .card-body:hover{background-color: sandybrown;  }
+#services .card-body {transition: .2s linear;}
+
+.checked {color: rgb(255, 165, 0); }
+
+h1, h2, h6 {text-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);;}
+i{	
+  color: var(--beige);
+	font-size:2em;
+}
+
+#contact h2{font-size: 2em "Roboto";}
+
+#contact i:hover {color: var(--red)}
+
+#portfolio img{transition: .5s;}
+#portfolio img:hover{
+	transform: scale(1.1);
+	box-shadow: 3px 10px 20px rgba(204, 204, 204, 0.19), 0 6px 6px rgba(185, 185, 185, 0.23);
+}
+
+#menu img{transition: .5s;}
+#menu img:hover{   
+	transform: scale(1.1);
+	box-shadow: 3px 10px 20px rgba(204, 204, 204, 0.22), 0 6px 6px rgba(185, 185, 185, 0.23)
+}
+
+.carousel-i{
+	margin: 30px 0 30px  0;
+	color:#fff;
+	font-size:2em;
+}
+.carousel-item h2{font-size: 1.9em;}
+.carousel-item h3{
+	font-size: 1.5em;
+	padding: 20px 0 60px 0;
+}
+
+.carousel-item img {
+	height: 50vh;
+	object-fit: cover;
+}
+ 
+.flip-card {
+	margin: auto;
+	background-color: transparent;
+	width: 300px;
+	height: 450px;
+	perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+  
+  /* This container is needed to position the front and back side */
+.flip-card-inner { 
+	position: relative;
+	width: 90%;
+	height: 90%;
+	text-align: center;
+	transition: 0.7s;
+	transform-style: preserve-3d;
+}
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+}
+.flip-card:hover .flip-card-back {
+	background-color: hsla(0, 100%, 30%, 0.562);;
+}
+  
+  /* Position the front and back side */
+.flip-card-front, .flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+  
+  /* Style the back side */
+.flip-card-back {
+	background-color: transparent;
+	color: white;
+	transform: rotateY(180deg);
+}
+.pt {padding-top: 30%}
+
+#books img{
+	width: 65%;
+	margin: auto;
+	transition: .9s 
+}
+#books img:hover{  
+  -webkit-transform: scaleX(-1);
+	transform: scaleX(-1);  
+} 
+  
+#books .fa:hover {color: white}
+
+footer {background: url('img/mainbg.jpg') }
+ 
+a{text-decoration: none}
+#icons a {
+	font-size: 1.5em;
+	transition: .4s linear;
+	padding:0;
+	margin:0
+}
+
+#icons i {transition: .2s linear;}
+#icons i:hover{ 
+	transform: scale(1.2) ;
+	text-shadow:3px 6px rgba(204, 204, 204, 0.22);
+}
+ 
+#last{ padding: 10px;}
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+  
+.flip-box {
+	margin: auto;
+	background-color: transparent;
+	width: 300px;
+	height: 200px;
+	border: 1px solid #f1f1f1;
+	perspective: 1000px;
+}
+  
+.flip-box-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+  
+.flip-box:hover .flip-box-inner {	transform: rotateX(180deg)}
+  
+.flip-box-front, .flip-box-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+  
+.flip-box-back {
+	background-color: rgba(85, 14, 14, 0.74);
+	color: white;
+	transform: rotateX(180deg);
+}
+
+/**/
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: center;
+  width: 33%; 
+  display: none; /* Hide columns by default */
+}
+.column img {height: 80%; width: 100% }
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* The "show" class is added to the filtered elements */
+.show { display: flex; justify-content: center;}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px  ;
+  background-color: white;
+  border: 2px solid var(--beige);
+  cursor: pointer; 
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+ color:#cc790c
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+span i:hover {color: var(--red)}
+
+@media only screen and (max-width: 1040px){
+ 
+  header img{display: none}
+  header #getstarted{display: none}
+  header ul{margin-top: 5%}
+
+  #books h6, .p { margin-left: 45%;  }
+
+	h2, p{padding: 10px 0 0 0}
+	#carouselExampleDark img {width: 100%;}
+	.flip-box{margin-bottom: 10%;}
+	.flip-card {margin: auto; padding: 0}
+	.flip-box {width: 100%}
+
+  #books .btn {margin: auto; width: 100%; padding: 0;}
+  #books .column{margin: 4% 0}
+  #books h1   {text-align: center;}
+ 
+  #books .column {width: 100%; text-align: center;}
+
+  #divider{padding: 0 ; margin: 6% 0 0 0 }
+
+}
